@@ -418,42 +418,60 @@ img {
   color: #fff;
 }
 
-.fourCards {
+.aboutStrip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 90px;
+  margin-top: 58px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
-.fourCards article {
-  padding: 28px 28px 32px;
+.aboutItem {
+  min-height: 126px;
+  display: grid;
+  grid-template-columns: 34px 1fr 18px;
+  gap: 14px;
+  align-items: center;
+  padding: 18px 22px;
   border-right: 1px solid var(--line);
+  transition: background 0.2s ease;
 }
 
-.fourCards article:first-child {
+.aboutItem:first-child {
   padding-left: 0;
 }
 
-.fourCards article:last-child {
+.aboutItem:last-child {
   border-right: 0;
 }
 
-.fourCards span {
-  font-size: 10px;
+.aboutItem:hover {
+  background: rgba(168, 221, 247, 0.24);
+}
+
+.aboutItem > span {
+  align-self: start;
+  padding-top: 5px;
   color: #777;
+  font-size: 9px;
 }
 
-.fourCards h3 {
-  margin: 40px 0 14px;
-  font: 400 30px Georgia, serif;
+.aboutItem h3 {
+  margin: 0 0 7px;
+  font: 400 24px/1 Georgia, serif;
 }
 
-.fourCards p {
+.aboutItem p {
+  max-width: 220px;
   margin: 0;
   color: #666;
-  font-size: 12px;
-  line-height: 1.65;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.aboutItem b {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* EVENTS */
@@ -1006,54 +1024,42 @@ a.event:hover {
 
 .partnerIntro {
   display: grid;
-  grid-template-columns: 1fr 0.6fr;
-  gap: 80px;
+  grid-template-columns: 1fr 0.62fr;
+  gap: 90px;
   align-items: end;
 }
 
-.partnerIntro p {
-  max-width: 460px;
+.partnerIntroClean {
+  min-height: 420px;
+}
+
+.partnerPitch {
+  max-width: 520px;
+  padding-bottom: 10px;
+}
+
+.partnerPitch p {
+  margin: 0 0 34px;
   color: #aaa;
-  font-size: 14px;
-  line-height: 1.65;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
-.logoGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 85px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.logoGrid div {
-  min-height: 175px;
-  display: flex;
+.partnerCta {
+  width: max-content;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  color: #666;
-  font-size: 10px;
-  letter-spacing: 0.14em;
-}
-
-.logoGrid div:last-child {
-  border-right: 0;
-}
-
-.partnerBottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 28px;
-  color: #aaa;
-  font-size: 12px;
-}
-
-.partnerBottom a {
-  padding-bottom: 4px;
-  border-bottom: 1px solid #fff;
+  gap: 44px;
+  padding: 14px 0 7px;
+  border-bottom: 1px solid rgba(255,255,255,.75);
   color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.partnerCta span {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* JOIN */
@@ -1149,6 +1155,25 @@ footer {
   font-size: 10px;
 }
 
+.developerCredit {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 18px;
+  color: #999;
+  font-size: 9px;
+}
+
+.developerCredit a {
+  color: #666;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.developerCredit a:hover {
+  color: var(--ink);
+}
+
 /* TABLET */
 
 @media (max-width: 1100px) {
@@ -1200,7 +1225,7 @@ footer {
     border-right: 0;
   }
 
-  .fourCards,
+  .aboutStrip,
   .darkGrid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1211,10 +1236,6 @@ footer {
 
   .experience {
     grid-template-columns: 1fr;
-  }
-
-  .logoGrid {
-    grid-template-columns: 1fr 1fr;
   }
 
   .freshersBanner {
@@ -1300,18 +1321,22 @@ footer {
     gap: 10px;
   }
 
-  .fourCards,
+  .aboutStrip,
   .sportGrid,
-  .darkGrid,
-  .logoGrid {
+  .darkGrid {
     grid-template-columns: 1fr;
   }
 
-  .fourCards article,
-  .fourCards article:first-child {
-    padding: 26px 0;
+  .aboutItem,
+  .aboutItem:first-child {
+    min-height: 108px;
+    padding: 16px 0;
     border-right: 0;
     border-bottom: 1px solid var(--line);
+  }
+
+  .aboutItem:last-child {
+    border-bottom: 0;
   }
 
   .event {
@@ -1423,8 +1448,21 @@ footer {
     font-size: 20vw;
   }
 
+  .partnerIntroClean {
+    min-height: auto;
+  }
+
+  .partnerPitch {
+    padding-bottom: 0;
+  }
+
   .footerLinks {
     flex-direction: column;
     gap: 22px;
+  }
+
+  .developerCredit {
+    justify-content: flex-start;
+    margin-top: 16px;
   }
 }

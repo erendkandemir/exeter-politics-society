@@ -6,6 +6,8 @@ const FIXR_ORGANISER = "https://fixr.co/organiser/962072334";
 const FRESHERS_FIXR =
   "https://fixr.co/event/ice-breaker-social-exeter-politics-society-tickets-238222151";
 
+const DEVELOPER_LINKEDIN = "https://www.linkedin.com/in/eren-kandemir-0b6491290/";
+
 const events = [
   {
     day: "14",
@@ -313,42 +315,42 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="fourCards">
-          <article>
+        <div className="aboutStrip">
+          <a href="#events" className="aboutItem">
             <span>01</span>
-            <h3>Social</h3>
-            <p>
-              Weekly events throughout term, from club nights and pub golf to
-              mixers, quizzes and joint socials.
-            </p>
-          </article>
+            <div>
+              <h3>Social</h3>
+              <p>Weekly events, nights out and joint socials.</p>
+            </div>
+            <b>↓</b>
+          </a>
 
-          <article>
+          <a href="#academic" className="aboutItem">
             <span>02</span>
-            <h3>Academic</h3>
-            <p>
-              Speakers, debates and conversations that take politics beyond the
-              seminar room.
-            </p>
-          </article>
+            <div>
+              <h3>Academic</h3>
+              <p>Speakers, debates, careers and the podcast.</p>
+            </div>
+            <b>↓</b>
+          </a>
 
-          <article>
+          <a href="#sport" className="aboutItem">
             <span>03</span>
-            <h3>Sport</h3>
-            <p>
-              Football, netball, cricket and rugby give members another way to
-              represent PolSoc.
-            </p>
-          </article>
+            <div>
+              <h3>Sport</h3>
+              <p>Football, netball, cricket and rugby.</p>
+            </div>
+            <b>↓</b>
+          </a>
 
-          <article>
+          <a href="#welfare" className="aboutItem">
             <span>04</span>
-            <h3>Welfare</h3>
-            <p>
-              A dedicated welfare team, weekly check-ins and support throughout
-              the year.
-            </p>
-          </article>
+            <div>
+              <h3>Welfare</h3>
+              <p>Support, check-ins and member wellbeing.</p>
+            </div>
+            <b>↓</b>
+          </a>
         </div>
       </section>
 
@@ -744,31 +746,26 @@ export default function Home() {
       <section id="partners" className="partner section">
         <div className="kicker muted">07 — PARTNERS &amp; SPONSORS</div>
 
-        <div className="partnerIntro">
+        <div className="partnerIntro partnerIntroClean">
           <h2>
             Work with
             <br />
             PolSoc.
           </h2>
 
-          <p>
-            Connect with one of Exeter&apos;s largest student communities through
-            partnerships, sponsored events and year-round collaboration.
-          </p>
-        </div>
+          <div className="partnerPitch">
+            <p>
+              Connect with one of Exeter&apos;s largest student communities through
+              partnerships, sponsored events and year-round collaboration.
+            </p>
 
-        <div className="logoGrid">
-          <div>PARTNER</div>
-          <div>SPONSOR</div>
-          <div>PARTNER</div>
-          <div>SPONSOR</div>
-        </div>
-
-        <div className="partnerBottom">
-          <span>Interested in working with us?</span>
-          <a href="mailto:politics@groups.exeterguild.com">
-            Partnership enquiries ↗
-          </a>
+            <a
+              className="partnerCta"
+              href="mailto:politics@groups.exeterguild.com"
+            >
+              Partnership enquiries <span>↗</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -780,9 +777,9 @@ export default function Home() {
 
         <div className="joinContent">
           <h2>
-            Join the
+            Make this your year
             <br />
-            <em>conversation.</em>
+            <em>With Polsoc.</em>
           </h2>
 
           <div>
@@ -854,6 +851,13 @@ export default function Home() {
         <div className="footerBottom">
           <span>© 2026 Exeter Politics Society</span>
           <a href="#top">Back to top ↑</a>
+        </div>
+
+        <div className="developerCredit">
+          <span>Website developed by</span>
+          <a href={DEVELOPER_LINKEDIN} target="_blank" rel="noopener noreferrer">
+            Eren Kandemir ↗
+          </a>
         </div>
       </footer>
     </main>
