@@ -213,9 +213,9 @@ export default function Home() {
         <div className="heroBody">
           <div className="heroCopyBlock">
             <h1>
-              Politics
+              Polsoc
               <br />
-              <em>happens here.</em>
+              <em>starts here.</em>
             </h1>
 
             <div className="heroRight">
