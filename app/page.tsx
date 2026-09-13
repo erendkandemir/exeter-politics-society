@@ -15,7 +15,7 @@ const events = [
     tag: "FRESHERS",
     title: "Freshers Fair Stall",
     text: "Come and meet the committee, find out what PolSoc has planned for the year and ask us anything about getting involved.",
-    meta: "10:00–16:00 · Great Hall",
+    meta: "10:00–17:00 · Great Hall",
     cta: "No ticket needed",
     href: null,
   },
