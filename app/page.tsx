@@ -179,27 +179,41 @@ export default function Home() {
         </div>
 
         <div className="heroBody">
-          <h1>
-            Politics
-            <br />
-            <em>happens here.</em>
-          </h1>
+          <div className="heroCopyBlock">
+            <h1>
+              Politics
+              <br />
+              <em>happens here.</em>
+            </h1>
 
-          <div className="heroRight">
-            <p>
-              One of Exeter&apos;s largest academic societies. Weekly socials,
-              political discussion, guest speakers, four sports teams, welfare,
-              trips and two annual balls.
-            </p>
+            <div className="heroRight">
+              <p>
+                One of Exeter&apos;s largest academic societies. Weekly socials,
+                political discussion, guest speakers, four sports teams, welfare,
+                trips and two annual balls.
+              </p>
 
-            <div className="actions">
-              <a className="blackBtn" href={FIXR_ORGANISER} target="_blank">
-                Browse FIXR <span>↗</span>
-              </a>
+              <div className="actions">
+                <a className="blackBtn" href={FIXR_ORGANISER} target="_blank">
+                  Browse FIXR <span>↗</span>
+                </a>
 
-              <a className="underLink" href="#events">
-                See what&apos;s on ↓
-              </a>
+                <a className="underLink" href="#events">
+                  See what&apos;s on ↓
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="heroPhotoWrap">
+            <img
+              src="/hero/hero-ball.jpg"
+              alt="Exeter Politics Society formal event"
+              className="heroPhoto"
+            />
+            <div className="heroPhotoCaption">
+              <span>POLITICS SOCIETY</span>
+              <span>2026 / 27</span>
             </div>
           </div>
         </div>

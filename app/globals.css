@@ -143,10 +143,17 @@ img {
 .heroBody {
   flex: 1;
   display: grid;
-  grid-template-columns: 1.8fr 0.65fr;
-  gap: 70px;
-  align-items: end;
-  padding: 70px 0 56px;
+  grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.95fr);
+  gap: 34px;
+  align-items: stretch;
+  padding: 54px 0 34px;
+}
+
+.heroCopyBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 0;
 }
 
 .hero h1,
@@ -169,7 +176,8 @@ img {
 }
 
 .heroRight {
-  max-width: 390px;
+  max-width: 430px;
+  margin-top: 34px;
   padding-bottom: 8px;
 }
 
@@ -177,6 +185,46 @@ img {
   margin: 0;
   font-size: 17px;
   line-height: 1.55;
+}
+
+.heroPhotoWrap {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  background: var(--navy);
+}
+
+.heroPhoto {
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  object-fit: cover;
+  object-position: center 48%;
+}
+
+.heroPhotoWrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.42), transparent 32%),
+    linear-gradient(to right, rgba(23, 75, 154, 0.06), transparent 42%);
+  pointer-events: none;
+}
+
+.heroPhotoCaption {
+  position: absolute;
+  z-index: 3;
+  right: 18px;
+  bottom: 16px;
+  left: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
 }
 
 .actions {
@@ -1115,6 +1163,11 @@ footer {
     max-width: 520px;
   }
 
+  .heroPhotoWrap,
+  .heroPhoto {
+    min-height: 520px;
+  }
+
   .stats {
     grid-template-columns: 1fr 1fr;
   }
@@ -1180,7 +1233,12 @@ footer {
   }
 
   .heroBody {
-    padding-top: 70px;
+    padding-top: 52px;
+  }
+
+  .heroPhotoWrap,
+  .heroPhoto {
+    min-height: 390px;
   }
 
   .hero h1 {
