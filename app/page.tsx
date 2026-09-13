@@ -299,18 +299,15 @@ export default function Home() {
 
           <div className="bodyCopy">
             <p className="lead">
-              A society built around the people who make Politics at Exeter what
-              it is.
+              The social and academic home of politics at Exeter.
             </p>
             <p>
-              PolSoc brings together students from across the university through
-              a packed calendar of socials, academic events, careers
-              opportunities, trips, welfare support and intramural sport.
+              PolSoc brings together students from across the university through socials, speakers, careers events, trips, welfare, sport and everything in between.
+
+
             </p>
             <p>
-              You do not need to study Politics to join. If you are interested in
-              politics, current affairs or simply want to be part of one of
-              Exeter&apos;s biggest student communities, you are welcome.
+              You don’t have to study Politics to join. If you’re into politics, current affairs, meeting new people or just want to be part of one of Exeter’s biggest student communities, there’s a place for you here.
             </p>
           </div>
         </div>
