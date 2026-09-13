@@ -89,7 +89,7 @@ const committee = [
   ["Henry Atkinson", "Academic Secretary"],
   ["Ernest Lee", "Academic Secretary"],
   ["Zachary Ikhelef", "Podcast Chair"],
-  ["Megan Dickinson", "Publicity Secretary"],
+  ["Megan Dickins", "Publicity Secretary"],
   ["Orion Hamer", "Events Secretary"],
   ["Hayden Smith", "IM President"],
   ["Izzy Lewis", "Netball Captain"],
