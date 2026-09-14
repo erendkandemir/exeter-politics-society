@@ -9,16 +9,7 @@ const FRESHERS_FIXR =
 const DEVELOPER_LINKEDIN = "https://www.linkedin.com/in/eren-kandemir-0b6491290/";
 
 const events = [
-  {
-    day: "14",
-    month: "SEP",
-    tag: "FRESHERS",
-    title: "Freshers Fair Stall",
-    text: "Come and meet the committee, find out what PolSoc has planned for the year and ask us anything about getting involved.",
-    meta: "10:00–17:00 · Great Hall",
-    cta: "No ticket needed",
-    href: null,
-  },
+  
   {
     day: "15",
     month: "SEP",
@@ -273,14 +264,14 @@ export default function Home() {
       <section className="freshersBanner">
         <div>
           <span className="bannerTag">NEXT EVENT</span>
-          <strong>Freshers Fair Stall</strong>
+          <strong>Ice Breaker Social</strong>
         </div>
 
         <div className="bannerMeta">
-          <span>MONDAY 14 SEPTEMBER</span>
-          <span>10:00–16:00</span>
-          <span>GREAT HALL</span>
-          <span>COME AND MEET THE COMMITTEE</span>
+          <span>Tuesday 15 SEPTEMBER</span>
+          <span>19:30–late</span>
+          <span>THE COCKTAIL CLUB</span>
+          <span>FESHERS EVENT</span>
         </div>
 
         <a href="#events">
