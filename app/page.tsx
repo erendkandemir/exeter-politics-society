@@ -17,7 +17,7 @@ const events = [
     title: "Ice Breaker Social",
     text: "Our Freshers-only launch night at The Cocktail Club on Gandy Street. No dress code — just come along, meet people and start the year with PolSoc.",
     meta: "19:30–late · The Cocktail Club",
-    cta: "Tickets out now",
+    cta: "SOLD OUT!!!",
     href: FRESHERS_FIXR,
   },
   {
