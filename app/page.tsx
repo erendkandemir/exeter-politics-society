@@ -10,16 +10,7 @@ const DEVELOPER_LINKEDIN = "https://www.linkedin.com/in/eren-kandemir-0b6491290/
 
 const events = [
   
-  {
-    day: "15",
-    month: "SEP",
-    tag: "SOCIAL",
-    title: "Ice Breaker Social",
-    text: "Our Freshers-only launch night at The Cocktail Club on Gandy Street. No dress code — just come along, meet people and start the year with PolSoc.",
-    meta: "19:30–late · The Cocktail Club",
-    cta: "SOLD OUT!!!",
-    href: FRESHERS_FIXR,
-  },
+  
   {
     day: "17",
     month: "SEP",
@@ -57,7 +48,7 @@ const events = [
     title: "Back to School Social",
     text: "Our first full-society social of the year at The Cocktail Club, with half-price drinks all night.",
     meta: "19:30–late · The Cocktail Club",
-    cta: "Tickets dropping this week",
+    cta: "Tickets out at 5PM today",
     href: FIXR_ORGANISER,
   },
 ];
