@@ -255,14 +255,14 @@ export default function Home() {
       <section className="freshersBanner">
         <div>
           <span className="bannerTag">NEXT EVENT</span>
-          <strong>Ice Breaker Social</strong>
+          <strong>Back to School Social</strong>
         </div>
 
         <div className="bannerMeta">
-          <span>Tuesday 15 SEPTEMBER</span>
+          <span>Thursday 24th SEPTEMBER</span>
           <span>19:30–late</span>
           <span>THE COCKTAIL CLUB</span>
-          <span>FESHERS EVENT</span>
+          <span>SOCIETY EVENT</span>
         </div>
 
         <a href="#events">
